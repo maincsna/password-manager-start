@@ -12,7 +12,7 @@ def generate_password():
 
     password_letters = [choice(letters) for _ in range(randint(0,10))]
     password_symbols = [choice(letters) for _ in range(randint(2,4))]
-    password_numbers = [choice(letters) for _ in range(randint(2,4))]
+    password_numbers = [choice(numbers) for _ in range(randint(2,4))]
 
     password_list = password_numbers + password_symbols + password_letters
     shuffle(password_list)
